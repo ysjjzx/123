@@ -1,0 +1,662 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+
+]]--
+
+local obf_stringchar = string.char;
+local obf_stringbyte = string.byte;
+local obf_stringsub = string.sub;
+local obf_bitlib = bit32 or bit;
+local obf_XOR = obf_bitlib.bxor;
+local obf_tableconcat = table.concat;
+local obf_tableinsert = table.insert;
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+	local result = {};
+	_G.Cs = {UQSDDAA=3,YASDMRXA=1,YASa0AVV=2};
+	for i = 1, #LUAOBFUSACTOR_STR do
+		obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + #Cs + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, 1 + (i % #LUAOBFUSACTOR_KEY), 1 + (i % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+	end
+	return obf_tableconcat(result);
+end
+local v0 = tonumber;
+local v1 = string.byte;
+local v2 = string.char;
+local v3 = string.sub;
+local v4 = string.gsub;
+local v5 = string.rep;
+local v6 = table.concat;
+local v7 = table.insert;
+local v8 = math.ldexp;
+local v9 = getfenv or function()
+	return _ENV;
+end;
+local v10 = setmetatable;
+local v11 = pcall;
+local v12 = select;
+local v13 = unpack or table.unpack;
+local v14 = tonumber;
+local function v15(v16, v17, ...)
+	local v18 = 1;
+	local v19;
+	v16 = v4(v3(v16, 5), LUAOBFUSACTOR_DECRYPT_STR_0("\159\141", "\126\177\163\187\69\134\219\167"), function(v30)
+		if (v1(v30, 2) == 81) then
+			v19 = v0(v3(v30, 1, 1));
+			return "";
+		else
+			local v85 = 0;
+			local v86;
+			while true do
+				if (v85 == 0) then
+					v86 = v2(v0(v30, 16));
+					if v19 then
+						local v122 = v5(v86, v19);
+						v19 = nil;
+						return v122;
+					else
+						return v86;
+					end
+					break;
+				end
+			end
+		end
+	end);
+	local function v20(v31, v32, v33)
+		if v33 then
+			local v87 = 0 - 0;
+			local v88;
+			while true do
+				if (v87 == 0) then
+					v88 = (v31 / ((5 - 3) ^ (v32 - (1 - 0)))) % ((4 - (1639 - (1523 + 114))) ^ (((v33 - (620 - (555 + 64))) - (v32 - 1)) + (932 - (857 + 74))));
+					return v88 - (v88 % 1);
+				end
+			end
+		else
+			local v89 = (570 - ((1244 - (282 + 595)) + 201)) ^ (v32 - (928 - (214 + 713)));
+			return (((v31 % (v89 + v89)) >= v89) and (1 + 0)) or (0 + 0);
+		end
+	end
+	local function v21()
+		local v34 = v1(v16, v18, v18);
+		v18 = v18 + 1;
+		return v34;
+	end
+	local function v22()
+		local v35, v36 = v1(v16, v18, v18 + 2 + 0);
+		v18 = v18 + (2 - 0);
+		return (v36 * (1321 - (68 + 997))) + v35;
+	end
+	local function v23()
+		local v37, v38, v39, v40 = v1(v16, v18, v18 + ((2230 - (892 + 65)) - (226 + 1044)));
+		v18 = v18 + (17 - 13);
+		return (v40 * (16777333 - (32 + 85))) + (v39 * (64226 + 1310)) + (v38 * (57 + 199)) + v37;
+	end
+	local function v24()
+		local v41 = v23();
+		local v42 = v23();
+		local v43 = 2 - 1;
+		local v44 = (v20(v42, 1 - 0, 36 - 16) * ((352 - (87 + 263)) ^ 32)) + v41;
+		local v45 = v20(v42, 201 - (67 + 113), 23 + 8);
+		local v46 = ((v20(v42, 78 - (81 - 35)) == 1) and -(1 + 0)) or (3 - 2);
+		if (v45 == (952 - (802 + 150))) then
+			if (v44 == (0 - 0)) then
+				return v46 * ((0 + 0) - 0);
+			else
+				local v105 = 0 + 0;
+				while true do
+					if (v105 == (997 - (915 + (873 - (368 + 423))))) then
+						v45 = 2 - 1;
+						v43 = 0 + 0;
+						break;
+					end
+				end
+			end
+		elseif (v45 == (2691 - 644)) then
+			return ((v44 == 0) and (v46 * ((1188 - (1069 + 118)) / (0 - 0)))) or (v46 * NaN);
+		end
+		return v8(v46, v45 - (2237 - 1214)) * (v43 + (v44 / (2 ^ (10 + (131 - 89)))));
+	end
+	local function v25(v47)
+		local v48 = 18 - (10 + 8);
+		local v49;
+		local v50;
+		while true do
+			if (v48 == (3 - 2)) then
+				v49 = v3(v16, v18, (v18 + v47) - ((363 + 80) - (416 + 26)));
+				v18 = v18 + v47;
+				v48 = 6 - 4;
+			end
+			if (2 == v48) then
+				v50 = {};
+				for v106 = 1, #v49 do
+					v50[v106] = v2(v1(v3(v49, v106, v106)));
+				end
+				v48 = 2 + 1;
+			end
+			if (v48 == (0 - 0)) then
+				v49 = nil;
+				if not v47 then
+					local v112 = 438 - (145 + 293);
+					while true do
+						if (v112 == (430 - ((816 - (201 + 571)) + (1524 - (116 + 1022))))) then
+							v47 = v23();
+							if (v47 == (1486 - ((4154 - 3156) + 488))) then
+								return "";
+							end
+							break;
+						end
+					end
+				end
+				v48 = 1;
+			end
+			if (v48 == (1 + 0 + 2)) then
+				return v6(v50);
+			end
+		end
+	end
+	local v26 = v23;
+	local function v27(...)
+		return {...}, v12("#", ...);
+	end
+	local function v28()
+		local v51 = (function()
+			return function(v90, v91, v92, v93, v94, v95, v96, v97)
+				local v90 = (function()
+					return 0;
+				end)();
+				local v91 = (function()
+					return;
+				end)();
+				local v92 = (function()
+					return;
+				end)();
+				while true do
+					if (v90 == #"[") then
+						if (v91 == #"<") then
+							v92 = (function()
+								return v93() ~= (374 - (123 + 251));
+							end)();
+						elseif (v91 == (6 - 4)) then
+							v92 = (function()
+								return v94();
+							end)();
+						elseif (v91 == #LUAOBFUSACTOR_DECRYPT_STR_0("\34\222\46", "\156\67\173\74\165")) then
+							v92 = (function()
+								return v95();
+							end)();
+						end
+						v96[v97] = (function()
+							return v92;
+						end)();
+						break;
+					end
+					if ((0 - 0) == v90) then
+						local v114 = (function()
+							return 0;
+						end)();
+						local v115 = (function()
+							return;
+						end)();
+						while true do
+							if (v114 ~= (0 - 0)) then
+							else
+								v115 = (function()
+									return 698 - (208 + 490);
+								end)();
+								while true do
+									if (v115 == (0 - 0)) then
+										v91 = (function()
+											return v93();
+										end)();
+										v92 = (function()
+											return nil;
+										end)();
+										v115 = (function()
+											return 1825 - (1195 + 629);
+										end)();
+									end
+									if (v115 == (1 - 0)) then
+										v90 = (function()
+											return #"}";
+										end)();
+										break;
+									end
+								end
+								break;
+							end
+						end
+					end
+				end
+				return v90, v91, v92, v93, v94, v95, v96, v97;
+			end;
+		end)();
+		local v52 = (function()
+			return function(v98, v99, v100)
+				local v101 = (function()
+					return 241 - (187 + 54);
+				end)();
+				local v102 = (function()
+					return;
+				end)();
+				while true do
+					if (v101 == (780 - (162 + 618))) then
+						v102 = (function()
+							return 0 + 0;
+						end)();
+						while true do
+							if (v102 ~= (0 + 0)) then
+							else
+								local v123 = (function()
+									return 836 - (660 + 176);
+								end)();
+								local v124 = (function()
+									return;
+								end)();
+								while true do
+									if (v123 == (0 + 0)) then
+										v124 = (function()
+											return 202 - (14 + 188);
+										end)();
+										while true do
+											if (v124 ~= (0 + 0)) then
+											else
+												local v163 = (function()
+													return 675 - (534 + 141);
+												end)();
+												while true do
+													if (0 == v163) then
+														v98[v99 - #"{"] = (function()
+															return v100();
+														end)();
+														return v98, v99, v100;
+													end
+												end
+											end
+										end
+										break;
+									end
+								end
+							end
+						end
+						break;
+					end
+				end
+			end;
+		end)();
+		local v53 = (function()
+			return {};
+		end)();
+		local v54 = (function()
+			return {};
+		end)();
+		local v55 = (function()
+			return {};
+		end)();
+		local v56 = (function()
+			return {v53,v54,nil,v55};
+		end)();
+		local v57 = (function()
+			return v23();
+		end)();
+		local v58 = (function()
+			return {};
+		end)();
+		for v66 = #"~", v57 do
+			FlatIdent_7366E, Type, Cons, v21, v24, v25, v58, v66 = (function()
+				return v51(FlatIdent_7366E, Type, Cons, v21, v24, v25, v58, v66);
+			end)();
+		end
+		v56[#LUAOBFUSACTOR_DECRYPT_STR_0("\44\175\81", "\38\84\215\41\118\220\70")] = (function()
+			return v21();
+		end)();
+		for v67 = #"|", v23() do
+			local v68 = (function()
+				return 0 + 0;
+			end)();
+			local v69 = (function()
+				return;
+			end)();
+			while true do
+				if (v68 == (1000 - (451 + 549))) then
+					v69 = (function()
+						return v21();
+					end)();
+					if (v20(v69, #"[", #"!") ~= (0 + 0)) then
+					else
+						local v118 = (function()
+							return 0 - 0;
+						end)();
+						local v119 = (function()
+							return;
+						end)();
+						local v120 = (function()
+							return;
+						end)();
+						local v121 = (function()
+							return;
+						end)();
+						while true do
+							if (v118 == 2) then
+								if (v20(v120, #"!", #">") ~= #"|") then
+								else
+									v121[2 + 0] = (function()
+										return v58[v121[3 - 1]];
+									end)();
+								end
+								if (v20(v120, 2 - 0, 2 - 0) == #"~") then
+									v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\9\71\106", "\158\48\118\66\114")] = (function()
+										return v58[v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\179\60\8", "\155\203\68\112\86\19\197")]];
+									end)();
+								end
+								v118 = (function()
+									return 8 - 5;
+								end)();
+							end
+							if (v118 == 0) then
+								local v125 = (function()
+									return 0 + 0;
+								end)();
+								while true do
+									if ((0 + 0) == v125) then
+										v119 = (function()
+											return v20(v69, 2 - 0, #LUAOBFUSACTOR_DECRYPT_STR_0("\31\140\126", "\152\38\189\86\156\32\24\133"));
+										end)();
+										v120 = (function()
+											return v20(v69, #LUAOBFUSACTOR_DECRYPT_STR_0("\253\68\163\23", "\38\156\55\199"), 6);
+										end)();
+										v125 = (function()
+											return 1 + 0;
+										end)();
+									end
+									if (v125 == (397 - (115 + 281))) then
+										v118 = (function()
+											return 2 - 1;
+										end)();
+										break;
+									end
+								end
+							end
+							if (v118 == 1) then
+								local v126 = (function()
+									return 0 + 0;
+								end)();
+								local v127 = (function()
+									return;
+								end)();
+								while true do
+									if (v126 == 0) then
+										v127 = (function()
+											return 0 - 0;
+										end)();
+										while true do
+											if (1 ~= v127) then
+											else
+												v118 = (function()
+													return 2;
+												end)();
+												break;
+											end
+											if (v127 == (0 - 0)) then
+												local v167 = (function()
+													return 867 - (550 + 317);
+												end)();
+												while true do
+													if ((1581 - (1535 + 46)) == v167) then
+														v121 = (function()
+															return {v22(),v22(),nil,nil};
+														end)();
+														if (v119 == (0 + 0)) then
+															local v178 = (function()
+																return 0 - 0;
+															end)();
+															local v179 = (function()
+																return;
+															end)();
+															while true do
+																if ((0 + 0) ~= v178) then
+																else
+																	v179 = (function()
+																		return 0 - 0;
+																	end)();
+																	while true do
+																		if (v179 ~= (560 - (306 + 254))) then
+																		else
+																			v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\241\44\52", "\35\200\29\28\72\115\20\154")] = (function()
+																				return v22();
+																			end)();
+																			v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\87\187\212\201", "\84\121\223\177\191\237\76")] = (function()
+																				return v22();
+																			end)();
+																			break;
+																		end
+																	end
+																	break;
+																end
+															end
+														elseif (v119 == #",") then
+															v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\186\69\205", "\161\219\54\169\192\90\48\80")] = (function()
+																return v23();
+															end)();
+														elseif (v119 == (1 + 1)) then
+															v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\4\19\89", "\69\41\34\96")] = (function()
+																return v23() - (2 ^ (44 - 28));
+															end)();
+														elseif (v119 == #LUAOBFUSACTOR_DECRYPT_STR_0("\189\208\211", "\75\220\163\183\106\98")) then
+															local v184 = (function()
+																return 0 - 0;
+															end)();
+															local v185 = (function()
+																return;
+															end)();
+															while true do
+																if (v184 == (285 - (134 + 151))) then
+																	v185 = (function()
+																		return 0;
+																	end)();
+																	while true do
+																		if (v185 ~= 0) then
+																		else
+																			v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\5\178\138", "\185\98\218\235\87")] = (function()
+																				return v23() - ((1667 - (970 + 695)) ^ (1483 - (899 + 568)));
+																			end)();
+																			v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\133\56\34\240", "\202\171\92\71\134\190")] = (function()
+																				return v22();
+																			end)();
+																			break;
+																		end
+																	end
+																	break;
+																end
+															end
+														end
+														v167 = (function()
+															return 1;
+														end)();
+													end
+													if (v167 == (1 - 0)) then
+														v127 = (function()
+															return 1991 - (582 + 1408);
+														end)();
+														break;
+													end
+												end
+											end
+										end
+										break;
+									end
+								end
+							end
+							if (3 == v118) then
+								if (v20(v120, #LUAOBFUSACTOR_DECRYPT_STR_0("\112\144\100", "\232\73\161\76"), #LUAOBFUSACTOR_DECRYPT_STR_0("\234\128\10", "\126\219\185\34\61")) == #"<") then
+									v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\20\192\70\106", "\135\108\174\62\18\30\23\147")] = (function()
+										return v58[v121[#LUAOBFUSACTOR_DECRYPT_STR_0("\230\186\123\152", "\167\214\137\74\171\120\206\83")]];
+									end)();
+								end
+								v53[v67] = (function()
+									return v121;
+								end)();
+								break;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end
+		for v70 = #"}", v23() do
+			v54, v70, v28 = (function()
+				return v52(v54, v70, v28);
+			end)();
+		end
+		return v56;
+	end
+	local function v29(v60, v61, v62)
+		local v63 = v60[2 - (414 - (15 + 398))];
+		local v64 = v60[605 - (268 + 335)];
+		local v65 = v60[293 - (60 + 230)];
+		return function(...)
+			local v71 = v63;
+			local v72 = v64;
+			local v73 = v65;
+			local v74 = v27;
+			local v75 = 573 - (426 + 146);
+			local v76 = -1;
+			local v77 = {};
+			local v78 = {...};
+			local v79 = v12("#", ...) - (1457 - (282 + 1174));
+			local v80 = {};
+			local v81 = {};
+			for v103 = 0, v79 do
+				if ((2821 <= 4824) and (512 <= 3591) and (v103 >= v73)) then
+					v77[v103 - v73] = v78[v103 + (812 - (569 + (1224 - (18 + 964))))];
+				else
+					v81[v103] = v78[v103 + (2 - 1)];
+				end
+			end
+			local v82 = (v79 - v73) + 1 + 0;
+			local v83;
+			local v84;
+			while true do
+				local v104 = 0;
+				while true do
+					if (v104 == (1024 - (706 + 318))) then
+						v83 = v71[v75];
+						v84 = v83[1252 - (721 + 530)];
+						v104 = 1;
+					end
+					if ((1272 - (945 + 326)) == v104) then
+						if (v84 <= (16 - 9)) then
+							if ((1738 <= 2195) and (v84 <= ((11 - 8) + 0))) then
+								if (v84 <= (701 - (271 + 249 + 180))) then
+									if (v84 == (0 + 0)) then
+										v81[v83[1502 - (1408 + 92)]] = v83[(687 + 402) - (461 + 625)];
+									else
+										do
+											return;
+										end
+									end
+								elseif (v84 == (1290 - (993 + 295))) then
+									local v134 = v83[2];
+									v81[v134] = v81[v134](v13(v81, v134 + 1 + 0, v76));
+								else
+									v81[v83[1173 - (418 + 753)]] = v62[v83[2 + 1]];
+								end
+							elseif (v84 <= ((851 - (20 + 830)) + 4)) then
+								if (v84 > (2 + 2)) then
+									local v138 = 0 + 0 + 0;
+									local v139;
+									local v140;
+									local v141;
+									local v142;
+									while true do
+										if ((41 <= 3018) and (v138 == 1)) then
+											v76 = (v141 + v139) - 1;
+											v142 = 0;
+											v138 = 531 - (406 + (249 - (116 + 10)));
+										end
+										if ((4795 > 402) and (v138 == (1771 - (1749 + 20)))) then
+											for v175 = v139, v76 do
+												v142 = v142 + 1 + 0 + 0;
+												v81[v175] = v140[v142];
+											end
+											break;
+										end
+										if (v138 == (1322 - (1249 + 73))) then
+											v139 = v83[1 + 1];
+											v140, v141 = v74(v81[v139](v13(v81, v139 + 1, v83[1148 - (466 + 679)])));
+											v138 = 2 - 1;
+										end
+									end
+								else
+									local v143 = v83[2];
+									local v144, v145 = v74(v81[v143](v13(v81, v143 + 1, v83[8 - 5])));
+									v76 = (v145 + v143) - ((2639 - (542 + 196)) - (106 + 1794));
+									local v146 = 0 - 0;
+									for v164 = v143, v76 do
+										v146 = v146 + 1 + 0;
+										v81[v164] = v144[v146];
+									end
+								end
+							elseif (v84 == (1 + 1 + 4)) then
+								v81[v83[5 - (2 + 1)]] = {};
+							else
+								v81[v83[(2 + 3) - 3]] = {};
+							end
+						elseif (v84 <= 11) then
+							if ((4813 > 3565) and (v84 <= (123 - (4 + 110)))) then
+								if ((2145 <= 4104) and (v84 == (592 - (57 + 527)))) then
+									local v149 = 0;
+									local v150;
+									local v151;
+									while true do
+										if ((2689 < 4845) and (v149 == (1428 - (41 + 1386)))) then
+											v81[v150 + (2 - 1)] = v151;
+											v81[v150] = v151[v83[107 - (17 + 86)]];
+											break;
+										end
+										if (v149 == (0 + (0 - 0))) then
+											v150 = v83[3 - 1];
+											v151 = v81[v83[8 - 5]];
+											v149 = 167 - (122 + 44);
+										end
+									end
+								else
+									v81[v83[2 - 0]]();
+								end
+							elseif ((3912 == 3912) and (v84 > (33 - 23))) then
+								v81[v83[2 + 0]]();
+							else
+								v81[v83[1 + 1]] = v62[v83[5 - 2]];
+							end
+						elseif ((v84 <= 13) or (2322 > 2622)) then
+							if ((v84 > (77 - (30 + 35))) or (4534 == 2082)) then
+								local v154 = v83[2];
+								v81[v154] = v81[v154](v13(v81, v154 + 1 + 0, v76));
+							else
+								local v156 = v83[(2810 - (1126 + 425)) - (1043 + 214)];
+								local v157 = v81[v83[11 - 8]];
+								v81[v156 + (1213 - (323 + 889))] = v157;
+								v81[v156] = v157[v83[10 - (411 - (118 + 287))]];
+							end
+						elseif (v84 > (594 - (361 + 219))) then
+							v81[v83[322 - ((207 - 154) + 267)]] = v83[3];
+						else
+							do
+								return;
+							end
+						end
+						v75 = v75 + 1 + 0;
+						break;
+					end
+				end
+			end
+		end;
+	end
+	return v29(v28(), {}, v17)(...);
+end
+return v15(LUAOBFUSACTOR_DECRYPT_STR_0("\167\223\30\28\168\243\216\193\98\13\168\244\219\209\97\108\168\247\221\211\100\123\174\246\221\164\101\14\175\243\220\162\100\4\174\130\221\167\98\14\168\243\216\193\98\13\174\240\221\161\100\121\174\242\219\163\98\10\171\150\219\160\102\5\170\150\220\164\101\13\172\240\221\165\101\9\168\244\222\163\97\108\168\247\221\168\96\108\175\243\220\160\101\14\171\134\217\193\96\123\175\245\221\161\101\10\170\130\221\167\100\4\175\243\221\168\101\8\174\245\220\165\101\14\174\242\220\162\100\14\174\129\221\213\101\9\174\242\221\213\101\9\170\130\221\163\100\123\174\131\217\214\101\4\175\244\217\193\100\124\175\134\220\168\96\123\171\246\216\162\97\14\170\129\220\162\100\8\174\241\220\163\96\123\174\255\221\165\100\12\174\243\220\163\96\123\174\131\221\161\100\4\174\130\217\214\96\8\172\242\216\166\96\8\171\255\216\169\96\8\172\246\216\167\96\8\172\242\216\168\96\8\172\246\216\161\96\8\171\255\223\163\96\120\174\132\220\165\100\12\168\247\219\169\102\108\168\247\219\167\101\108\168\247\218\162\98\14\168\247\219\161\98\13\168\246\216\193\98\13\169\245\219\163\98\13\168\245\219\160\98\15\171\150\219\160\96\13\168\132\219\160\98\15\168\247\219\162\98\13\168\244\219\160\99\15\170\150\219\160\98\9\168\247\219\164\102\108\168\247\219\164\98\13\168\245\219\160\98\9\172\150\219\160\98\15\168\247\219\161\97\108\168\247\219\162\96\108\168\247\219\169\98\13\168\246\219\160\98\12\168\247\219\161\96\108\168\247\219\161\97\108\168\247\219\161\101\108\168\247", "\199\235\144\82\61\152"), v9(), ...);
